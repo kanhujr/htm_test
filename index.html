@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first website</title>
+    <style>
+      .lc {
+        font-size: 40px;
+        color: blue;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="lc">Login Crendential</div>
+
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <p>
+          Salutation
+          <label for="Salutation">
+            <br />
+            <select name="Salutation">
+              <option value="--None--">--None--</option>
+              <option value="Mr">Mr</option>
+              <option value="-Mrs">Mrs</option>
+              <option value="Miss">Miss</option>
+              <option value="Dr">Dr</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label
+            >First Name :
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Enter your firstname"
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Last Name :
+            <input
+              type="text"
+              name="Lastname"
+              placeholder="Enter your Lastname"
+            />
+          </label>
+        </p>
+
+        <p>
+          Gender :
+          <label> <input type="radio" name="gender" value="Male" />Male </label>
+          <label>
+            <input type="radio" name="gender" value="Female" />Female</label
+          >
+        </p>
+        <p>
+          <label>
+            Email :
+            <input type="email" name="email" placeholder="Enter emailaddress" />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Date of Birth : <input type="date" name="birthdate" />
+          </label>
+        </p>
+        <p>
+          Address : <br />
+          <textarea name="address" rows="3" cols="20"></textarea>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
